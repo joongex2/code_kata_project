@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning css layout</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <a href="#" class="scrollbtn">
+        <div class="scrollbtn" id="scrollbtn">
+            <span class="scroll-up"><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+        </div>
+    </a>
+    <!-- Section header -->
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-fire"><i class="fa fa-fire" aria-hidden="true"></i></span>
+                    <h1>Code Kata</h1>
+                </div>
+                <ul class="menu-kata">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Code Kata</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="nav-fixed-kata">
+        <div class="container">
+            <div class="nav-fixed-wrapper">
+                <div class="logo">
+                    <h1>Code Kata</h1>
+                </div>
+                <ul class="menu-kata">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Code Kata</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="service">
+        <div class="container">
+            <div class="service-grid">
+                <!-- HTML basic exercises -->
+                <div onclick="location.href='code_kata/01_print_your_name/1_print_your_name.html'"
+                    class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>print your name</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>1. print your name</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/02_print_number/2_print_number.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>print number</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>2. print number</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/03_set_title/3_set_title.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>set title</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>3. set title</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/04_current_date/4_current_date.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>current date</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>4. current date</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/05_any_text/5_any_text.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>any text</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>5. any text</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/06_any_text_head/6_any_text_head.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>any text</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>6. any text head</p>
+                    </div>
+                </div>
+                <!-- HTML text exercises -->
+                <div onclick="location.href='code_kata/07_print_name_green/7_print_name_green.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>print name green</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>7. print name green</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/08_print_number_color/8_print_number_color.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>print number color</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>8. print number color</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/09_print_name_tahoma/9_print_name_tahoma.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>print name tahoma</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>9. print name tahoma</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/10_print_paragraph_diff_font/10_print_paragraph_diff_font.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>print paragraph diff font</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>10. print paragraph diff font</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/11_print_book_description/11_print_book_description.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>print book description</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>11. print book description</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/12_print_name_heading/12_print_name_heading.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>print name heading</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>12. print name heading</p>
+                    </div>
+                </div>
+                <!-- HTML link exercises -->
+                <div onclick="location.href='code_kata/13_link_searchengine/13_link_searchengine.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>link searchengine</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>13. link searchengine</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/14_link_new_window/14_link_new_window.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>link new window</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>14. link new window</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/15_link_to_bottom/15_link_to_bottom.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>link to bottom</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>15. link to bottom</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/16_link_to_top/16_link_to_top.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>link to top</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>16. link to top</p>
+                    </div>
+                </div>
+                <div onclick="location.href='code_kata/17_link_top_bottom/17_link_top_bottom.html'" class="service-items">
+                    <div class="container-img img-wrapper">
+                        <img class="code-image"
+                            src="https://images.unsplash.com/photo-1508317469940-e3de49ba902e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="Paris">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>link top bottom</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>17. link top bottom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-copy">
+            <p>&copy: Copyright 2020 Joong.All Right Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() >= 10) {
+                    $('.nav-wrapper').fadeOut('slow');
+                } else {
+                    $('.nav-wrapper').fadeIn('fast');
+                }
+            });
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() >= 20) {
+                    $('.nav-fixed-kata').fadeIn('slow');
+                } else {
+                    $('.nav-fixed-kata').fadeOut('fast');
+                }
+            });
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() >= 1000) {
+                    $('.scrollbtn').fadeIn('slow');
+                } else {
+                    $('.scrollbtn').fadeOut('fast');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

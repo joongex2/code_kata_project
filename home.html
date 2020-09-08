@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning css layout</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <a href="#" class="scrollbtn">
+        <div class="scrollbtn" id="scrollbtn">
+            <span class="scroll-up"><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+        </div>
+    </a>
+    <!-- Section header -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <span class="logo-fire"><i class="fa fa-fire" aria-hidden="true"></i></span>
+                        <h1>Code Kata</h1>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="code_kata.html">Code Kata</a></li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Contact me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav-fixed">
+            <div class="container">
+                <div class="nav-fixed-wrapper">
+                    <div class="logo">
+                        <h1>Code Kata</h1>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="code_kata.html">Code Kata</a></li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Contact me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="content-wrapper">
+                <section class="content">
+                    <h3>Write code that humans can understand.</h3>
+                    <p><i>"Any fool can write code that a computer can understand. Good programmers write code that
+                            humans can understand."</i>Martin Fowler</p>
+                    <a href="#" class="btn">WATCH INTRO</a>
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Products -->
+    <section class="products">
+        <div class="container">
+            <div class="products-area">
+                <div class="products-first">
+                    <div class="pd-img">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="">
+                    </div>
+                    <div class="pd-info">
+                        <h3>What is code kata?</h3>
+                        <p>
+                            "code kata is an exercise in programming which helps programmers hone their skills through
+                            practice and repetition" Wikipedia. 
+                        </p>
+                    </div>
+                </div>
+                <div class="products-second">
+                    <div class="pd-info">
+                        <h3>Kata (คาตะ)</h3>
+                        <p>“มันแปลตรงตัวหมายถึง แบบอย่าง อธิบายเพิ่มเติมแบบเข้าใจง่ายๆ เช่น คาตะในคาราเต้ จะบ่งบอกถึงลักษณะเด่นของแต่ละสำนัก เปรียบเสมือกระบวนท่าเอกลักษณ์ อีกทั้งยังบ่งบอกระดับความสามารถของแต่ละบุคคลได้ด้วย” hatoriz.com</p>
+                    </div>
+                    <div class="pd-img">
+                        <img src="https://images.unsplash.com/photo-1560631820-ecf9d56ba39e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-items">
+                    <div class="footer-title">
+                        <h3>Footer title</h3>
+                    </div>
+                    <ul class="footer-menu">
+                        <li>Menu 1</li>
+                        <li>Menu 2</li>
+                        <li>Menu 3</li>
+                        <li>Menu 4</li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-title">
+                        <h3>Footer title</h3>
+                    </div>
+                    <ul class="footer-menu">
+                        <li>Menu 1</li>
+                        <li>Menu 2</li>
+                        <li>Menu 3</li>
+                        <li>Menu 4</li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-title">
+                        <h3>Footer title</h3>
+                    </div>
+                    <ul class="footer-menu">
+                        <li>Menu 1</li>
+                        <li>Menu 2</li>
+                        <li>Menu 3</li>
+                        <li>Menu 4</li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <div class="footer-title">
+                        <h3>Footer title</h3>
+                    </div>
+                    <ul class="footer-menu">
+                        <li>Menu 1</li>
+                        <li>Menu 2</li>
+                        <li>Menu 3</li>
+                        <li>Menu 4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy: Copyright 2020 Joong.All Right Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() >= 10) {
+                    $('.nav-wrapper').fadeOut('slow');
+                } else {
+                    $('.nav-wrapper').fadeIn('fast');
+                }
+            });
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() >= 20) {
+                    $('.nav-fixed').fadeIn('slow');
+                } else {
+                    $('.nav-fixed').fadeOut('fast');
+                }
+            });
+            $(window).on('scroll', function () {
+                if ($(window).scrollTop() >= 1000) {
+                    $('.scrollbtn').fadeIn('slow');
+                } else {
+                    $('.scrollbtn').fadeOut('fast');
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
